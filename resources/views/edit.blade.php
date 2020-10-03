@@ -20,10 +20,6 @@
                 <form action="tugas" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label for="exampleInputEmail1">ID</label>
-                        <input type="text" class="form-control" value="{{$user->id}}" name="id" readonly>
-                      </div>
-                    <div class="form-group">
                         <label for="exampleInputEmail1">Product Title</label>
                         <input type="text" class="form-control" value="{{$user->product_title}}" name="title">
                       </div>

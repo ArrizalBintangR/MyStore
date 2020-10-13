@@ -19,6 +19,9 @@ Route::get('/', function () {
 });
 Route::get('product/{slug}', $url. "\ProductController@showProduct");
 Route::get('tugas', $url. "\ProductController@index");
-Route::get('edit', $url. '\productController@update');
 Route::get('edit/{slug}', $url . '\productController@edit');
+Route::post('edit/update/{slug}', $url. '\productController@update');
+Route::get('create', $url . '\ProductController@create');
+Route::post('create/new', $url . '\ProductController@store');
+Route::get('delete/{slug}', $url . '\ProductController@destroy');
  
